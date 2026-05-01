@@ -1,42 +1,71 @@
-/* Основний контейнер футера */
-.footer {
-    padding: 40px 16px;
-    text-align: center;
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
-.footer-top {
+
+.footer {
+    padding: 20px 8px;
+    background: var(--color-scheme-1-background);
+}
+
+.footer-main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 40px;
     margin-bottom: 64px;
 }
 
-.social-links-footer {
+.footer-logo {
+    display: inline-block;
+    fill: var(--color-neutral-darkest);
+    stroke: var(--color-scheme-2-text);
+    stroke-width: 0.52px;
+}
+
+.footer-socials {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 12px;
     list-style: none;
     padding: 0;
+    margin: 0;
+    fill: var(--color-scheme-1-text);
 }
 
-.contact-footer {
+
+.footer-nav-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 24px;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
+}
+
+.footer-nav-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
     text-decoration: none;
-        color: #000000;
-        font-size: 18px;
-        line-height: 1.5;
+    transition: color 0.3s ease;
+    display: block;
+    text-align: center;
 }
 
 .footer-copy {
+    font-family: var(--font-family);
+    font-weight: 400;
     font-size: 14px;
-    color: #000000;
     line-height: 1.5;
+    color: var(--color-neutral-darkest);
+    text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-margin-top: 24px;
+    margin: 24px 16px 0 16px;
     padding-top: 32px;
 }
