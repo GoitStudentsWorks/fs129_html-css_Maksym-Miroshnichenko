@@ -46,7 +46,7 @@
     text-align: center;
     color: #000000;
 }
-.gallery-items {
+.gallery-images {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -61,7 +61,7 @@
     height: 100%;
     object-fit: cover;
 }
-.img-container-left, .img-container-right {
+.img-item-left, .img-item-right {
     display: flex;
     flex-direction: column;
 
@@ -72,14 +72,14 @@
     height: auto;
 }
 @media screen and (min-width: 768px) {
-    .gallery-items {
+    .gallery-images {
     flex-direction: row;
     gap: 24px;
     }
-    .img-container-left {
+    .img-item-left {
     gap: 32px; /*24px;*/
     }
-    .img-container-right {
+    .img-item-right {
     gap: 24px;
     }
     .necklace {
@@ -100,10 +100,10 @@
     }
 }
 @media screen and (min-width:1440px) {
-    .gallery-items {
+    .gallery-images {
     gap: 32px;
     }
-     .img-container-right /*, .img-container-left*/ {
+     .img-item-right /*, .img-item-left*/ {
     gap: 32px;
     }
     .necklace, .earrings {
