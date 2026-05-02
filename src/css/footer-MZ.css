@@ -69,3 +69,18 @@
     margin: 24px 16px 0 16px;
     padding-top: 32px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-main-content {
+        
+        padding: 80px 64px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .footer-logo {padding-bottom: 12px;}
+        .footer-nav-list {
+            margin: 24px;
+        }
+
+}
