@@ -18,13 +18,24 @@
 
 }
 
-.mob-menu-open {
-    padding: 0;
-    border: none;
+.heder-mob-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     background-color: transparent;
     cursor: pointer;
     margin-left: auto;
-    margin-right: 4px;
+    width: 48px;
+    height: 48px;
+}
+
+.mob-menu-open {
+    padding: 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
 }
 
 .mob-menu-icon {
@@ -44,7 +55,7 @@ font-family: "Mulish",sans-serif;
 
 @media screen and (min-width: 768px) {
   
-    .mob-menu-open {
+    .heder-mob-menu {
         display: none;
     }
 
