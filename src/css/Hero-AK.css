@@ -23,9 +23,7 @@
 
     .hero-container {
     max-width: 335px;
-    /* margin: 0; */
-    align-items: center;
-    justify-self: center;
+    margin: 0 auto;
     }
 
     .title-hero {
@@ -92,7 +90,7 @@
 
 .hero-container {
     max-width: 513px;
-
+    margin: 0;
  
 } 
 
