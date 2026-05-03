@@ -12,6 +12,7 @@
 
 .nav-overlay {
   position: fixed;
+  display: flex;
   inset: 0;
   background: #ffffff;
   z-index: 100;
@@ -23,7 +24,9 @@
 }
 
 .nav-overlay.is-open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-modal {
@@ -32,6 +35,7 @@
   background: #ffffff;
   display: flex;
   flex-direction: column;
+  max-width: 375px
 }
 
 .nav-m-header {
@@ -60,17 +64,13 @@
   border: none;
   cursor: pointer;
   padding: 4px;
+  margin-right: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #1a1a1a;
   transition: opacity 0.2s;
   flex-shrink: 0;
-}
-
-.nav-logo-btn:hover {
-  opacity: 0.6;
-  outline: none
 }
  
 .nav-close-btn:hover,
@@ -88,7 +88,6 @@
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  max-width: 335px;
 }
 
 .nav-link-btn {
@@ -108,10 +107,20 @@
 
 .nav-link-btn:hover,
 .nav-link-btn:focus {
-  color: #b5a055;
-  outline: none
+  color: #1a1a1a;
+  text-decoration: underline;
+  outline: none;
+}
+.nav-link-btn:active {
+  color: #8668c7;
+  text-decoration: none;
 }
 
+.nav-link-btn.is-disabled {
+  color: #b0b0b0;
+  pointer-events: none;
+  text-decoration: none;
+}
 .nav-order-wrap {
   padding: 52px 20px 24px 20px;
 }
@@ -136,9 +145,23 @@
 
 .nav-order-btn:hover,
 .nav-order-btn:focus {
-  background: transparent;
-  color: #b5a055;
+  background: #ffffff;
+  color: #ccc16e;
+  border: 1px solid #b5a055;
   outline: none;
+}
+.nav-order-btn:active {
+  background: #ccc16e;
+  color: #ffffff;
+  border: 1px solid #ccc16e;
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+}
+.nav-order-btn:disabled {
+  border: 1px solid #ccc16e;
+  background: #ccc16e;
+  color: #ffffff;
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 @media (min-width: 375px) {
   .nav-modal {
