@@ -13,6 +13,8 @@
 
 .nav-overlay {
   position: fixed;
+  display: flex;
+  justify-content: center;
   inset: 0;
   background: #ffffff;
   z-index: 100;
@@ -20,7 +22,7 @@
   opacity: 0;
   visibility: hidden; 
   pointer-events: none;
-  max-width: 375px
+  
 }
 
 .nav-overlay.is-open {
@@ -37,6 +39,7 @@
   background: #ffffff;
   display: flex;
   flex-direction: column;
+  max-width: 375px
 }
 
 .nav-m-header {
