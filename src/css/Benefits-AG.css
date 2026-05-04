@@ -22,8 +22,6 @@
   margin: 0 auto 32px;
 }
 
-.benefits-wrapper {
-}
 .benefits-list {
   display: flex;
   flex-direction: column;
