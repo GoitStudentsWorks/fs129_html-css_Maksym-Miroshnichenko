@@ -4,17 +4,12 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 40px;
-    padding: 64px 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
     .gallery { 
         gap: 80px;
-        padding: 64px 32px;  
-    }
-}
-@media screen and (min-width:1440px) {
-    .gallery {
-        padding: 64px;   
     }
 }
 .gallery-description {
