@@ -9,7 +9,7 @@
     background-color: #fff;
 }
 
-.about-container {
+.about-us {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -140,7 +140,7 @@
         max-width: 704px;
     }
 
-    .about-container {
+    .about-us {
         padding-bottom: 80px;
         padding-top: 80px;
         gap: 32px;
@@ -186,7 +186,7 @@
         background-color: #fff;
     }
 
-    .about-container {
+    .about-us {
         flex-direction: row;
         padding-top: 40px;
         padding-bottom: 40px;
