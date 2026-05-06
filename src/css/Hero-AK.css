@@ -82,9 +82,9 @@
     }
 }
 
-.hero-container {
+/* .hero-container {
     margin: 0;
-}
+} */
 
 .title-hero {
  max-width: 513px;
@@ -93,11 +93,12 @@
 
 .text-hero {
     max-width: 513px;
+   
 }
 
 .btn-hero {
     width: 217px;
-}
+   
 }
 
 
@@ -116,10 +117,10 @@
     
 }
 
-.hero-container {
+/* .hero-container {
     max-width: 640px;
     padding-right: 0;
-}
+} */
 
 .title-hero {
     font-size: 56px;
